@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编写一个将用户输入的信息输出到网页的前端程序</title>
+    <script>
+        window.onload = function () {
+            document.getElementById('btn').onclick = function () {
+                const message = document.getElementById('content').value
+                console.log(message)
+                document.getElementById('show').innerHTML = message
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="content">
+    <button onclick="showMessAge()" id="btn">显示</button>
+    <div id="show"></div>
+
+    <!-- <script>
+        function showMessAge() {
+            const inputText = document.getElementById('content').value
+            if (inputText) {
+
+            }
+        }
+    </script> -->
+</body>
+
+</html>

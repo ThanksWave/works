@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编写一个将用户输入的信息输出到网页的前端程序</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>请输入您的信息：</h1>
+        <input type="text" id="textInput" placeholder="请输入您的名字...">
+        <button onclick="showInput()">显示信息</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function showInput() {
+            const inputText = document.getElementById('textInput').value;
+            if (inputText) {
+                const resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = `<strong>您输入的内容：</strong><br>`;
+                resultDiv.innerHTML += inputText;
+                resultDiv.style.color = '#4CAF50';
+            } else {
+                resultDiv.innerHTML = '请输入内容！';
+                resultDiv.style.color = '#F44336';
+            }
+        }
+    </script>
+</body>
+
+</html>
