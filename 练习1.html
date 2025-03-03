@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环打印各种三角形</title>
+</head>
+<!-- 谢浪229970428 -->
+
+<body>
+    <script>
+        //三角形
+        for (var i = 1; i <= 5; i++) {
+
+            // 绘制每一层前面的空格
+            for (var j = 1; j <= 5 - i; j++)
+                document.write("&nbsp;")
+
+
+            // 绘制每一层的星号
+            for (var k = 1; k <= i; k++)
+                document.write('*')
+
+
+            // 打印换行符，以开始新的一行
+            document.write("<br/>");
+        }
+        document.write("<br/>"); document.write("<br/>");
+        //平行四边形
+        for (var i = 1; i < 5; i++) {
+            // 绘制每一层前面的空格
+            for (var j = 1; j <= 5 - i; j++)
+                document.write("&nbsp;")
+
+            for (var k = 1; k <= 5; k++)
+                document.write("*");
+            document.write("<br/>");
+        } document.write("<br/>"); document.write("<br/>");
+        //菱形
+        for (var i = 1; i <= 3; i++) {
+            // 绘制每一层前面的空格
+            for (var j = 1; j <= 3 - i; j++)
+                document.write("&nbsp;")
+
+            for (var k = 1; k <= i * 2 - 1; k++)
+                document.write("*");
+            document.write("<br/>");
+        }
+        for (var i = 2; i >= 1; i--) {
+            // 绘制每一层前面的空格
+            for (var j = 1; j <= 3 - i; j++)
+                document.write("&nbsp;")
+
+            for (var k = 1; k <= i * 2 - 1; k++)
+                document.write("*");
+            document.write("<br/>");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
