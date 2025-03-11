@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课上练习</title>
+</head>
+
+<body>
+
+    <script>
+        // const str = 'abc';
+        // const str2 = new String("def")
+        // console.log(typeof str, typeof str2)
+
+        // name = "lwy"
+        // function t() {
+        //     var name = "tlwy";
+        //     function s() {
+        //         var name = "slwy";
+        //         console.log(name);
+        //     }
+        //     function ss() {
+        //         console.log(name);
+        //     }
+        //     s();
+        //     ss();
+        // }
+        // t();
+
+        // for (var i = 0; i <= 5; i++) {
+        //     setTimeout(function () {
+        //         console.log(i);
+        //     }, 1000*i)
+        // }
+        //立即执行函数
+        // for (var i = 0; i <= 5; i++) {
+        //     (function (i) {
+        //         setTimeout(function timer() {
+        //             console.log(i);
+        //         }, 1000 * i)
+        //     })(i)
+        // }
+        // function createCounter() {
+        //     let count = 0;
+        //     return function () {
+        //         count += 1
+        //         return count;
+        //     }
+        // }
+        // const counter = createCounter();
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // console.log(counter());
+        // const person = {
+        //     name: 'xiaoming',
+        //     age: 18,
+        //     say: function () {
+        //         console.log("hello");
+        //     }
+        // }
+        // //构造函数
+        // function student(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.sayName = function () {
+        //         console.log(this.name);
+        //     }
+        // }
+        // const person2 = new student('xiaohong', 19);
+        // console.log(person2.name);
+        // console.log(person2.age);
+        // person2.sayName();
+        // //使用工厂模式创建
+        // function createPerson(name, age) {
+        //     const person = new Object();
+        //     person.name = name;
+        //     person.age = age;
+        //     person.sayName = function () {
+        //         console.log(this.name);
+        //     }
+        //     return person;
+        // }
+        // const person3 = createPerson('xiaohong', 19);
+        // console.log(person3.name);
+        // console.log(person3.age);
+        // person3.sayName();
+
+
+        // function person() {
+
+        // }
+        // person.prototype.name = "lwy";
+        // person.prototype.age = 18;
+        // person.prototype.sayName = function () {
+        //     console.log(this.name);
+        // }
+        // const person1 = new person();
+        // console.log(person1.name);
+        // console.log(person1.age);
+        // person1.sayName();
+
+
+        // const obj = { age: 21 }
+        // Object.defineProperty(obj, 'name', {
+        //     value: 'lwy',
+        //     writable: false,
+        //     enumerable: false,
+        //     configurable: false
+        // })
+        // console.log(obj.name);
+        // obj.name = 'tlwy';
+        // console.log(obj.name);
+        // console.log(Object.keys(obj));
+
+        //         Object.defineProperty(obj,'age',{
+        //     set:function(value){
+        //         if(value<0){
+        //             throw new Error('年龄不能小于0')
+        //         },
+        //         this._age = value;
+        //     },
+        //     get:function(){ }
+        // })
+        // function person() {
+        //     var name = name
+        //     var sex = sex
+        //     this.getName = function () {
+        //         return name;
+        //     }
+        //     this.getSex = function () {
+        //         return sex;
+        //     }
+        // }
+        // var person1 = new person('刘备', '男');
+        // console.log(person1.getName());
+        // console.log(person1.getSex());\
+        //创建一个属性，类型为number，假设属性名为a
+        // const obj = {}
+        // Object.defineProperty(obj, 'a', {
+        //     value: 1,
+        //     writable: true,
+        //     configurable: true,
+        //     enumerable: true
+        // })
+
+        const a = 1;
+        const b = [1, 2, 3];
+        function findIndex(a, b) {
+            if (b.includes(a)) {
+                return b.indexOf(a);
+            } else {
+                return -1;
+            }
+        }
+        console.log(findIndex(a, b));
+
+
+        //创建一个属性，类型为Array，假设属性名为b
+        // Object.defineProperty(obj, 'b', {
+        //     value: [1, 2, 3],
+        //     writable: true,
+        //     configurable: true,
+        //     enumerable: true
+        // })
+
+        // //创建一个方法，该方法能够判断a是否出现在b中，出现则返回a在b中的下标，否则返回-1
+        // function findIndex(a, b) {
+        //     if()
+        // }
+    </script>
+</body>
+
+</html>
